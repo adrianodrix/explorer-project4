@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 10px */
+    --Bg_Light: #ECE9FD;
+    --Text_Dark: #090039;
+}
+
+body {
+    background: var(--Bg_Light);
+    padding: 6.0rem 2.3rem 6.6rem;
+
+    color: var(--Text_Dark);
+    
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem; 
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4.0rem;
+    font-weight: 800;
+    line-height: 4.8rem; /* 120% */
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: var(--Text_Dark_Gray, rgba(10, 0, 57, 0.64));
+}
+
+ul {
+    list-style: none;
+    margin-top: 7.2rem;
+}
+
+main p:first-child {
+    color: var(--Text_Dark_Accent, #7158EF);   
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    
+    margin-bottom: 1.7rem;
+}
+
+h1 + p {
+    margin-bottom: 3.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Text_Dark_Accent);
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    max-width: 25.7rem;
+    display: flex;
+    gap: 3.8rem;
+}
+
+ul li + li  {
+    margin-top: 3.2rem;
+}
+
+ul li span {
+    max-width:3rem;
+    font-size: 7.2rem;
+    font-weight: 800;
+    line-height: 8.0rem;
+}
+
+/* media queries */
+@media (min-width: 40em) {
+    body {
+        padding-top: 8rem;
+    
+    }
+    main {
+        max-width: 102rem;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {
+        max-width: 40rem;
+    }
+
+    ul li {
+        gap: 5.5rem;
+        max-width: 45rem;
+        align-items: center;
+    }
+}
